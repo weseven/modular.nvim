@@ -1,4 +1,27 @@
-# kickstart-modular.nvim
+# modular.nvim
+
+## README FIRST
+
+This is a personal fork of dam9000/kickstart-modular.nvim.
+New changes will be merged from the upstream repository from time to time.
+
+This should be the procedure:
+
+```
+cd private-repo
+git remote add public https://github.com/exampleuser/public-repo.git
+git pull public master # Creates a merge commit
+git push origin master
+```
+
+Source: https://stackoverflow.com/questions/10065526/github-how-to-make-a-fork-of-public-repository-private
+
+### Initial setup
+
+```sh
+git clone https://github.com/weseven/modular.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
+
 
 ## Introduction
 
