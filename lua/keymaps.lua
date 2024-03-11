@@ -71,4 +71,14 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- yank to system clipboard
+vim.keymap.set('n', '<C-y>', '"+y', { noremap = true, silent = true, desc = 'Copy to system clipboard' })
+vim.keymap.set('v', '<C-y>', '"+y', { noremap = true, silent = true, desc = 'Copy to system clipboard' })
+vim.keymap.set('n', '<leader>y', '"+y', { noremap = true, silent = true, desc = 'Copy to system clipboard' })
+
+-- paste from system clipboard
+vim.keymap.set('n', '<C-p>', '"+gP', { noremap = true, silent = true, desc = 'Paste from system clipboard' })
+vim.keymap.set('v', '<C-p>', '"+gP', { noremap = true, silent = true, desc = 'Paste from system clipboard' })
+vim.keymap.set('n', '<leader>p', '"+gP', { noremap = true, silent = true, desc = 'Paste from system clipboard' })
+
 -- vim: ts=2 sts=2 sw=2 et
