@@ -14,6 +14,8 @@ return {
       },
     }
     -- keymap
-    vim.keymap.set('n', '<leader>t', ':NvimTreeToggle<CR>', { noremap = true, silent = true, desc = 'Toggle file [T]ree' })
+    vim.keymap.set('n', '<leader>tt', ':NvimTreeToggle<CR>', { noremap = true, silent = true, desc = 'File [T]ree [T]oggle' })
+    vim.keymap.set('n', '<leader>tf', ':NvimTreeFindFileToggle<CR>', { noremap = true, silent = true, desc = 'File [T]ree find [F]ile toggle' })
+    vim.keymap.set('n', '<leader>tr', ':NvimTreeRefresh<CR>', { noremap = true, silent = true, desc = 'File [T]ree [R]efresh' })
   end,
 }
