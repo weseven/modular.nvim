@@ -12,7 +12,7 @@ git pull public-upstream master --rebase # optional rebase
 git push --force
 ```
 
-Last upstream sync: 2024-05-10 17:29 UTC
+Last upstream sync: 2024-05-25 10:12 UTC
 
 ### Initial setup
 
