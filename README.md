@@ -3,16 +3,7 @@
 ## README FIRST
 
 This is a personal fork of [dam9000/kickstart-modular.nvim](https://github.com/dam9000/kickstart-modular.nvim).
-New changes will be merged from the upstream repository from time to time, as follows:
-
-```
-cd $XDG_CONFIG_HOME/nvim
-git remote add public-upstream https://github.com/dam9000/kickstart-modular.nvim.git
-git pull public-upstream master --rebase # optional rebase
-git push --force
-```
-
-Last upstream sync: 2024-05-25 10:12 UTC
+New changes will be merged from the upstream repository from time to time.
 
 ### Initial setup
 
