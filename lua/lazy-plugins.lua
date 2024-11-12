@@ -20,7 +20,6 @@ require('lazy').setup({
   -- Use `opts = {}` to force a plugin to be loaded.
   --
 
-
   -- Disable features when loading big files
   'LunarVim/bigfile.nvim',
 
