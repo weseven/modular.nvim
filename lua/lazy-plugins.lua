@@ -69,7 +69,7 @@ require('lazy').setup({
   --
   require 'custom.plugins.codeium',
 
-  require 'custom.plugins.fugitive',
+  require 'custom.plugins.neogit',
 
   require 'custom.plugins.nvimtree',
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
