@@ -64,4 +64,7 @@ vim.opt.scrolloff = 10
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 
+-- Diff options
+vim.opt.diffopt = 'internal,filler,closeoff,indent-heuristic,linematch:60,algorithm:histogram'
+
 -- vim: ts=2 sts=2 sw=2 et
