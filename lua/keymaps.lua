@@ -39,13 +39,11 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 -- Toggle to disable mouse mode and indentlines for easier paste
 ToggleMouse = function()
   if vim.o.mouse == 'a' then
-    vim.cmd [[IndentBlanklineDisable]]
     vim.wo.signcolumn = 'no'
     vim.o.mouse = 'v'
     vim.wo.number = false
     print 'Mouse disabled'
   else
-    vim.cmd [[IndentBlanklineEnable]]
     vim.wo.signcolumn = 'yes'
     vim.o.mouse = 'a'
     vim.wo.number = true
@@ -54,6 +52,11 @@ ToggleMouse = function()
 end
 
 vim.keymap.set('n', '<F10>', '<cmd>lua ToggleMouse()<cr>', { noremap = true })
+-- NOTE: Some terminals have coliding keymaps or are not able to send distinct keycodes
+-- vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })
+-- vim.keymap.set("n", "<C-S-l>", "<C-w>L", { desc = "Move window to the right" })
+-- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
+-- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
